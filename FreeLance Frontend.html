@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORK SPHERE</title>
+    <link rel="stylesheet" href="Website backend.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card-button {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <align="left"><img src="logo.jpg" alt="Work Sphere Logo" width="100px" height="100px"></align>
+            <h1>WORK SPHERE</h1><br>
+            <ul>
+                <li><a href="LOgin.html">Login</a></li>
+                <li><a href="Selection page for registration.html">Registration</a></li>
+                <li><a href="Contact Page.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2><b><u>Find Your Next Project</u></h2><br>
+        <p><h4>Connect with talented freelancers across the globe.</h4></p></b>
+        <br><br>
+        <a href="Add your project.html" class="card-button">Add Your Project</a>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <!-- Service Card 1 -->
+            <div class="card">
+                <img src="C:\Users\DIVYAM\Downloads\graphic designer.jpg" alt="Graphic Design">
+                <div class="card-body">
+                    <div class="card-title">Graphic Design</div>
+                    <div class="card-description">
+                        Get eye-catching logos, brochures, and more from skilled graphic designers.
+                    </div>
+                    <a href="Graphic Design.html" class="card-button">Explore</a>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="card">
+                <img src="C:\Users\DIVYAM\Downloads\web.jpeg" alt="Web Development">
+                <div class="card-body">
+                    <div class="card-title">Web Development</div>
+                    <div class="card-description">
+                        Build modern websites and apps with experienced developers.
+                    </div>
+                    <a href="web development.html" class="card-button">Explore</a>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="card">
+                <img src="c:\Users\DIVYAM\Downloads\writing.jpeg" alt="Content Writing">
+                <div class="card-body">
+                    <div class="card-title">Content Writing</div>
+                    <div class="card-description">
+                        Hire professional writers to create engaging content for your needs.
+                    </div>
+                    <a href="Content Writing.html" class="card-button">Explore</a>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="card">
+                <img src="c:\Users\DIVYAM\Downloads\marketing.jpg" alt="Digital Marketing">
+                <div class="card-body">
+                    <div class="card-title">Digital Marketing</div>
+                    <div class="card-description">
+                        Boost your business with top-notch marketing strategies.
+                    </div>
+                    <a href="Digital Marketing.html" class="card-button">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; TEAM WORK SPHERE </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

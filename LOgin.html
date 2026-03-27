@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+    function validateForm() 
+        {
+            const password = document.getElementById("password").value.trim();
+            const email = document.getElementById("email").value.trim();
+
+            
+    
+            if (password.length < 6) {
+                alert("Invalid Password");
+                return false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address (e.g., name@domain.com).");
+                return false;
+            }
+    
+            alert("Login successful!");
+            return true;
+        }
+        {
+            app.post('/check-account', (req, res) => {
+                const email = req.body.email;
+                // Check if email exists in the database
+                database.find({ email: email }, (err, user) => {
+                    if (user) {
+                         res.send('Account already exists. Please log in.');
+                        } else {
+                            res.send('No account found. Please register.');
+                        }
+                    });
+                });
+
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSphere - Login</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+    <div class="login-container">
+        <h1>Welcome to WorkSphere</h1>
+        <form id="loginForm" action="registration_db" method="post">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn" action="FreeLance Frontend.html">Login</button>
+            <div class="footer-links">
+                <a href="Registration form for worksphere site.html">Forgot Password?</a>
+                <p>Don't have an account? <a href="Registration form for worksphere site.html">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
